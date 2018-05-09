@@ -19,6 +19,7 @@ public static class EventMessageDispatcher
     public static void Dispatch(IEventMessage message)
     {
         var messageType = message.GetType();
+        if(!receivers.ContainsKey(messageType)) return;
         foreach (var receiver in receivers[messageType])
         {
             receiver.ApplyMessage(message);
