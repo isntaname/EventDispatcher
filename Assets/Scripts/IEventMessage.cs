@@ -1,4 +1,7 @@
-﻿public interface IEventMessage
+﻿namespace EventDispatcher
 {
-    string GetMessageCode();
+    public interface IEventMessage
+    {
+        string GetMessageCode();
+    }
 }

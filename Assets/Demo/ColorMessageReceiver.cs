@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using EventDispatcher;
+using UnityEngine;
 
 public class ColorMessageReceiver : MonoBehaviourEventMessageReceiver<ColorMessage>
 {

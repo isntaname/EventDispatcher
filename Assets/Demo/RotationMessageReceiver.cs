@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using EventDispatcher;
 using UnityEngine;
 
 public class RotationMessageReceiver : MonoBehaviourEventMessageReceiver<RotationMessage>

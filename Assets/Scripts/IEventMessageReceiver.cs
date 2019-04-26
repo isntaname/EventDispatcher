@@ -1,4 +1,7 @@
-﻿public interface IEventMessageReceiver
+﻿namespace EventDispatcher
 {
-    void ApplyMessage(IEventMessage message);
+    public interface IEventMessageReceiver
+    {
+        void ApplyMessage(IEventMessage message);
+    }
 }

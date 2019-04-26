@@ -1,4 +1,5 @@
-﻿using UnityEngine.UI;
+﻿using EventDispatcher;
+using UnityEngine.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(Button), typeof(Image))]

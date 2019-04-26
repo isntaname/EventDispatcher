@@ -1,18 +1,21 @@
-﻿public class EventMessage : IEventMessage
+﻿namespace EventDispatcher
 {
-    private readonly string messageCode;
-
-    public EventMessage()
+    public class EventMessage : IEventMessage
     {
-    }
+        private readonly string messageCode;
 
-    public EventMessage(string messageCode)
-    {
-        this.messageCode = messageCode;
-    }
+        public EventMessage()
+        {
+        }
+
+        public EventMessage(string messageCode)
+        {
+            this.messageCode = messageCode;
+        }
     
-    public string GetMessageCode()
-    {
-        return messageCode;
+        public string GetMessageCode()
+        {
+            return messageCode;
+        }
     }
 }
